@@ -1,0 +1,79 @@
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+    --primary: #00204e;
+    --secondary: #ffffff;
+}
+
+body {
+    font-family: 'nunito', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header {
+    background-color: var(--secondary);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header h1 a {
+    color: var(--primary);
+    text-align: center;
+    display: inline;
+    font-size: 1.5vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../images/bpiano.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    min-height: 41rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero h2 {
+    font-size: 3vw;
+    color: var(--secondary);
+    padding-left: 50px;
+}
+
+.hero nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: right;
+}
+
+.hero nav ul li {
+    padding: 8px 8px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    background-color: var(--secondary);
+    opacity: .7;
+    color: var(--primary);  
+    font-size: 1.5vw;
+}
+
+.hero nav ul li:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+a:link {
+    text-decoration: none;
+}
